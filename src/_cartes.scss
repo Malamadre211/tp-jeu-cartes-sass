@@ -1,11 +1,19 @@
 @import 'mixin';
 
+$width-container: 80px;
+$heihgt-container: 125px;
+$width-carte: 70px;
+$height-carte: 115px;
+$margin-carte: 20px;
+
+
 .container__carte {
+    // rotate: random(360) * 1deg;
     @include flex(column, center, center);
-    width: 100px;
-    height: 150px;
-    margin-top: 50px;
-    margin-left: 50px;
+    width: $width-container;
+    height: $heihgt-container;
+    margin-top: $margin-carte;
+    margin-left: $margin-carte;
     background-color: white;
     border: 1px solid black;
     border-radius: 20px;
@@ -13,8 +21,8 @@
     .carte {
     @include flex(column, space-between, start);
     flex-wrap: wrap;
-      width: 80px;
-      height: 130px;
+      width: $width-carte;
+      height: $height-carte;
       background-color: white;
       border: 1px solid black;
       border-radius: 10px;
