@@ -10,6 +10,8 @@ body {
 }
 
 .container {
+  @include flex(column, space-between, start);
+  position: relative;
   margin-top: 50px;
   width: 800px;
   height: 600px;

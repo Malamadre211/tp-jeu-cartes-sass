@@ -6,8 +6,14 @@ $width-carte: 70px;
 $height-carte: 115px;
 $margin-carte: 20px;
 
+// @for $i from 2 through 6 {
+//     .container__carte-#{$i} {
+//       margin-bottom: 25px *i;
+//     }
+//   }
 
 .container__carte {
+    // position: absolute;
     // rotate: random(360) * 1deg;
     @include flex(column, center, center);
     width: $width-container;
