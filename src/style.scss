@@ -1,18 +1,16 @@
+@import 'cartes';
+
 body {
   background-color: green;
 }
 
-@mixin flex($justify, $align) {
-  display:flex;
-  justify-content: $justify;
-  align-items: $align;
-}
 
 .parent_container {
-  @include flex(center, center);
+  @include flex(center, center, center);
 }
 
 .container {
+  margin-top: 50px;
   width: 800px;
   height: 600px;
   border: 5px solid white;

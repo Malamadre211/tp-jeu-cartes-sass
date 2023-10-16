@@ -1,0 +1,52 @@
+@import 'mixin';
+
+.container__carte {
+    @include flex(column, center, center);
+    width: 100px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    .carte {
+    @include flex(column, space-between, start);
+    flex-wrap: wrap;
+      width: 80px;
+      height: 130px;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 10px;
+
+      .carte_top {
+        @include flex(column, start, center);
+        font-size: 15px;
+      }
+
+      .carte_left_total {
+        text-align: left;
+        margin-left: 5px;
+      }
+
+      .carte_bottom {
+        width: 100%;
+        @include flex(column, start, start);
+        font-size: 15px;
+        transform:rotate(-180deg);
+      }
+
+      .carte_right_total {
+        text-align: center;
+        margin-left: 5px;
+      }
+
+      .carte_center {
+        width: 100%;
+      }
+      .carte_icon_center{
+        text-align: center;
+        font-size: 35px;
+      }
+      }
+    }
