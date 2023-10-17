@@ -1,10 +1,11 @@
 @import 'mixin';
 
 $width-container: 80px;
-$heihgt-container: 125px;
+$height-container: 125px;
 $width-carte: 70px;
 $height-carte: 115px;
-$margin-carte: 20px;
+$margin-carte: 50px;
+$distance-carte: 50px;
 
 // @for $i from 2 through 6 {
 //     .container__carte-#{$i} {
@@ -13,16 +14,16 @@ $margin-carte: 20px;
 //   }
 
 .container__carte {
-    // position: absolute;
+    position: absolute;
     // rotate: random(360) * 1deg;
     @include flex(column, center, center);
     width: $width-container;
-    height: $heihgt-container;
+    height: $height-container;
     margin-top: $margin-carte;
     margin-left: $margin-carte;
     background-color: white;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 15px;
 
     .carte {
     @include flex(column, space-between, start);
@@ -63,4 +64,24 @@ $margin-carte: 20px;
         font-size: 35px;
       }
       }
+    }
+
+    #carte_2 {
+      margin-top: $distance-carte *2;
+    }
+
+    #carte_3 {
+      margin-top: $distance-carte *3;
+    }
+
+    #carte_4 {
+      margin-top: $distance-carte *4;
+    }
+
+    #carte_5 {
+      margin-top: $distance-carte *5;
+    }
+
+    #carte_6 {
+      margin-top: $distance-carte *6;
     }
