@@ -21,3 +21,13 @@
       }
   }
 }
+
+@mixin random-carte() {
+  @for $i from 1 through 3 {
+      #carte_defausse_#{$i} {
+          margin-top: math.random() * 50px;
+          margin-left: math.random() * 500px;
+          rotate: math.random() * 360deg;
+      }
+  }
+}

@@ -84,3 +84,15 @@ $distance-carte: 25px;
       // margin-top: $distance-carte *6;
       margin-left: $distance-carte *6;
     }
+
+    #carte_defausse_1 {
+      margin-left: $distance-carte;
+    }
+
+    #carte_defausse_2 {
+      margin-left: $distance-carte *3;
+    }
+    
+    #carte_defausse_3 {
+      margin-left: $distance-carte *5;
+    }

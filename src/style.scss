@@ -20,3 +20,12 @@ body {
   background: lighten(green, 20%);
   @include rotate-carte();
 }
+
+.container_2 {
+  margin-top: 100px;
+  margin-left: 100px;
+  @include flex(row, center, center);
+  width: 500px;
+  height: 400px; 
+  @include random-carte();
+}
