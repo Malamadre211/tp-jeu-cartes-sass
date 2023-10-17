@@ -29,3 +29,12 @@ body {
   height: 400px; 
   @include random-carte();
 }
+
+.container_3 {
+  @include flex(column, start, end);
+  rotate: 90deg;
+  width: 800px;
+  height: 600px;
+  margin-right: 150px;
+  @include rotate-carte();
+}
