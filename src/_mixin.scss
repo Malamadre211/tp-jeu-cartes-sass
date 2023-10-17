@@ -1,6 +1,23 @@
+@use "sass:math";
+
 @mixin flex($flex, $justify, $align) {
-    display:flex;
-    flex-direction: $flex;
-    justify-content: $justify;
-    align-items: $align;
+  display:flex;
+  flex-direction: $flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin rotate-carte($num-carte: 6, $angle: 10deg, $distance: 30px, $initial-margin-left: 50px) {
+  $carte-rotation: math.div($angle * $num-carte, 2) * -1;
+
+  @for $i from 1 through $num-carte {
+      #carte_#{$i} {
+          rotate: $carte-rotation + $angle * ($i - 1);
+          @if $i < math.div($num-carte, 2) {
+            top: 10px * ($num-carte - $i);
+          } @else {
+            top: 10px * $i;
+          }
+      }
   }
+}

@@ -4,14 +4,8 @@ $width-container: 80px;
 $height-container: 125px;
 $width-carte: 70px;
 $height-carte: 115px;
-$margin-carte: 50px;
-$distance-carte: 50px;
-
-// @for $i from 2 through 6 {
-//     .container__carte-#{$i} {
-//       margin-bottom: 25px *i;
-//     }
-//   }
+$margin-carte: 10px;
+$distance-carte: 25px;
 
 .container__carte {
     position: absolute;
@@ -20,7 +14,7 @@ $distance-carte: 50px;
     width: $width-container;
     height: $height-container;
     margin-top: $margin-carte;
-    margin-left: $margin-carte;
+    margin-left: $distance-carte;
     background-color: white;
     border: 1px solid black;
     border-radius: 15px;
@@ -67,21 +61,26 @@ $distance-carte: 50px;
     }
 
     #carte_2 {
-      margin-top: $distance-carte *2;
+      // margin-top: $distance-carte *2;
+      margin-left: $distance-carte *2;
     }
 
     #carte_3 {
-      margin-top: $distance-carte *3;
+      // margin-top: $distance-carte *3;
+      margin-left: $distance-carte *3;
     }
 
     #carte_4 {
-      margin-top: $distance-carte *4;
+      // margin-top: $distance-carte *4;
+      margin-left: $distance-carte *4;
     }
 
     #carte_5 {
-      margin-top: $distance-carte *5;
+      // margin-top: $distance-carte *5;
+      margin-left: $distance-carte *5;
     }
 
     #carte_6 {
-      margin-top: $distance-carte *6;
+      // margin-top: $distance-carte *6;
+      margin-left: $distance-carte *6;
     }

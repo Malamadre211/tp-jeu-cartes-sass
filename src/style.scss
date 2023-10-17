@@ -6,11 +6,11 @@ body {
 
 
 .parent_container {
-  @include flex(center, center, center);
+  @include flex(row, center, center);
 }
 
 .container {
-  @include flex(column, space-between, start);
+  @include flex(row, space-between, start);
   position: relative;
   margin-top: 50px;
   width: 800px;
@@ -18,4 +18,5 @@ body {
   border: 5px solid white;
   border-radius: 20px;
   background: lighten(green, 20%);
+  @include rotate-carte();
 }
